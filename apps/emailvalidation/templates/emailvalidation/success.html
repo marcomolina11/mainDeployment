@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Success Page</title>
+</head>
+<body>
+	<h1>Success!!</h1>
+	<h2>Emails Entered</h2>
+	<table>
+		{% for email in emails %}
+			<tr>
+				<td>{{email.email}}</td>
+				<td>{{email.created_at}}</td>
+			</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

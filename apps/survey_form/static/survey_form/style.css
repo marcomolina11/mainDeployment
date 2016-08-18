@@ -1,0 +1,21 @@
+select{
+	width: 175px;
+}
+textarea{
+	width: 310px;
+	height: 100px;
+	resize: none;
+}
+#button{
+	text-align: right;
+}
+form{
+	width: 320px;
+}
+h3{
+	text-decoration: underline;
+}
+#thanks{
+	width: 320px;
+	background-color: green;
+}

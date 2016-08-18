@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Date and Time</title>
+	 {% load staticfiles %}
+      <!-- The line above tells Django to be ready to listen for static files -->
+      <link rel="stylesheet" href="{% static 'timedisplay/style.css' %}" media="screen" title="no title"  charset="utf-8">
+</head>
+<body>
+	<div id="wrapper">
+		<p>The current date and time</p>
+		<div>
+			<h1>{{ date }}</h1>
+			<h1>{{ time }}</h1>			
+		</div>
+	</div>
+</body>
+</html>

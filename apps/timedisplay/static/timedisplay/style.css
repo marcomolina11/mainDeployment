@@ -1,0 +1,22 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+#wrapper{
+	margin: 0px auto;
+	padding: 25px;
+	width: 800px;
+	text-align: center;
+}
+#wrapper div {
+	border: 1px solid black;
+	text-align: center;
+	width: 400px;
+	margin: 0px auto;
+}
+#wrapper p {
+	border: 1px solid black;
+	text-align: center;
+	width: 200px;
+	margin: 10px auto;
+}

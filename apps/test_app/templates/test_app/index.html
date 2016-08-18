@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Test App (ORM)</title>
+</head>
+<body>
+	<h1>What up</h1>
+	{% for blog in blogs %}
+		<h5>{{blog.title}}</h5>
+		<p>{{blog.blog}}</p>
+		{% for comment in blog.comment_set.all %}
+			<p>{{comment.comment}}</p>
+			{%endfor%}
+		<form action="/comments/{{blog.id}}" method="POST">
+			{% csrf_token %}
+			<textarea name="comment"></textarea>
+			<input type="submit" value="Enter Comment for this blog">
+		</form>
+	{% endfor %}
+	<form action="/blogs" method="POST">
+	{% csrf_token %}
+		<label for="">Title</label>
+		<input type="text" name="title">
+		<textarea name="blog"></textarea>
+		<input type="submit" value="Enter Blog">
+	</form>
+</body>
+</html>
